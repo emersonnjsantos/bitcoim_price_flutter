@@ -39,6 +39,7 @@ class _HomeState extends State<Home> {
           _precoUSDVenda = retorno['USD']['sell'].toString();
           _precoEURCompra = retorno['EUR']['buy'].toString();
           _precoEURVenda = retorno['EUR']['sell'].toString();
+
         });
         logger.i("Preço atualizado: BRL Compra=$_precoBRLCompra, BRL Venda=$_precoBRLVenda, USD Compra=$_precoUSDCompra, USD Venda=$_precoUSDVenda, EUR Compra=$_precoEURCompra, EUR Venda=$_precoEURVenda");
       } else {
@@ -163,14 +164,14 @@ class _HomeState extends State<Home> {
                 ElevatedButton(
                   onPressed: _recuperarPreco, // Função de atualizar os preços
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blueAccent, // Cor do fundo do botão
+                    backgroundColor: const Color.fromARGB(255, 255, 255, 34), // Cor do fundo do botão
                     padding: const EdgeInsets.fromLTRB(30, 15, 30, 15), // Estilizando o botão
                   ),
                   child: const Text(
                     "Atualizar", // Texto do botão
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 0, 0, 0),
                     ),
                   ),
                 ),
