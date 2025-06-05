@@ -1,0 +1,8 @@
+# Ignorar código nativo de Android/iOS que pode confundir a linguagem
+android/**/*.c linguist-vendored
+android/**/*.cpp linguist-vendored
+ios/**/*.c linguist-vendored
+ios/**/*.cpp linguist-vendored
+
+# Ignorar pasta de build que não faz parte do código fonte
+build/** linguist-vendored
